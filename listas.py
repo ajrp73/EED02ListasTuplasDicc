@@ -64,8 +64,42 @@ print("listaNum3:", listaNum3)
 listaNum3.extend(listaNum3)
 print("listaNum3:", listaNum3)
 
+#El elemento en la posición 6 no está incluido. Va de 1 a 5
 listaNum4= listaNum3[1:6]
 print("listaNum4:", listaNum4)
 
+#Uso de rangos con salto
 listaNum5Pares= listaNum3[1:len(listaNum3):2]
 print("listaNum5Pares:", listaNum5Pares)
+
+#En los rangos podemos omitir valores. Si omitimos el inicio
+#el rango comenzará en el primero de la lista. Si omitimos el
+#fin, el rango irá hasta el último elemento de la lista. Si omitimos
+#el salto, se toma con salto el valor 1
+print("Rango listaNum3", listaNum3[6::])
+
+#Se pueden utilizar rangos negativos para recorrer la lista
+print("Rango listaNum3", listaNum3[-1:-13:-1])
+
+print("Rango listaNum3", listaNum3[-1::-1])
+
+listaNum6= ['A', 'B', 'C']
+listaNum7= [1, 2, 3]
+
+#Podemos definir sublistas
+listaNum8 = [listaNum6, listaNum7]
+print("listaNum8:", listaNum8)
+
+#Acceso a un elemento de una sublista
+print("listaNum8[1][1]:", listaNum8[1][1])
+listaNum9= ['X', 'Y', 'Z']
+
+listaNum8.append(listaNum9)
+print("listaNum8:", listaNum8)
+
+listaNum8.extend(listaNum9)
+print("listaNum8:", listaNum8)
+
+#Las listas pueden tener elementos de distinto tipo
+listaNum10=[125, 'A', 2.3, True, [1, 2, 3]]
+print("listaNum10:", listaNum10)
