@@ -10,13 +10,13 @@ print("colores:", colores)
 for i in colores:
     print(i)
 
+
 coloresMin=[ i.lower() for i in colores ]
 print(coloresMin)
 
 #color= input("Dime un color...")
-color="VERde"
-try: 
-    
+color="VERdea"
+try:     
     pos=coloresMin.index(color.lower())
     print(f"{color} está en la lista en la posicion {pos}")
 except Exception as e: 
@@ -72,11 +72,12 @@ print("listaNum4:", listaNum4)
 listaNum5Pares= listaNum3[1:len(listaNum3):2]
 print("listaNum5Pares:", listaNum5Pares)
 
+
 #En los rangos podemos omitir valores. Si omitimos el inicio
 #el rango comenzará en el primero de la lista. Si omitimos el
 #fin, el rango irá hasta el último elemento de la lista. Si omitimos
 #el salto, se toma con salto el valor 1
-print("Rango listaNum3", listaNum3[6::])
+print("Rango listaNum3", listaNum3[::])
 
 #Se pueden utilizar rangos negativos para recorrer la lista
 print("Rango listaNum3", listaNum3[-1:-13:-1])
@@ -97,8 +98,10 @@ listaNum9= ['X', 'Y', 'Z']
 listaNum8.append(listaNum9)
 print("listaNum8:", listaNum8)
 
+
 listaNum8.extend(listaNum9)
 print("listaNum8:", listaNum8)
+
 
 #Las listas pueden tener elementos de distinto tipo
 listaNum10=[125, 'A', 2.3, True, [1, 2, 3]]
